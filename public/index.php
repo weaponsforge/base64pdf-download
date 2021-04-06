@@ -4,6 +4,7 @@
   <meta curlarset="utf-8">
   <meta name="viewport" content="width=device-width; iniital-scale=1.0">
   <title>Base64 Encode</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <h1>PHP Base64 Download</h1>
