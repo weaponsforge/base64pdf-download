@@ -17,6 +17,7 @@
 3. Load the app on  
 `http://localhost/base64pdf-download/public`
 4. Replace the `URL` input with other URL's that can serve expected data format required by `/public/download.php`
+5. Encode valid JSON data in the `JSON Request Payload` text input with JSON data that will be accepted by the `URL` input encoded previously on #4.
 
 @weaponsforge  
 20210407
