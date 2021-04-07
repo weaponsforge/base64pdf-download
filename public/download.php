@@ -1,13 +1,19 @@
 <?php
-  // Fetch a JSON response containing a base64-encoded PDF field from 'url'
+  // Fetch a JSON response containing a base64-encoded field 'FileContents' from 'url'
   if (isset($_POST['url'])) {
-	$url = $_POST['url'];
-	  
+    $url = $_POST['url'];
+    $params = $_POST['params'];
+
     // Send POST request to external 'url' server
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_POST, 1);
+
+    // Set the POST request payload required by the external 'url' server
+    $postFields = json_decode($params);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($postFields));
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
     $result = curl_exec($curl);
     curl_close($curl);
     

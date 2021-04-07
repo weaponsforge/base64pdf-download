@@ -3,9 +3,26 @@ body, html {
 }
 
 form {
-  width: 300px;
+  width: 600px;
+}
+
+form div {
+  margin-bottom: 8px;
 }
 
 input {
   width: 100%;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+}
+
+.submit {
+  width: 250px;
 }
