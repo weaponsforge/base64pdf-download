@@ -10,5 +10,5 @@ const init = () => {
 }`
 
   document.getElementById('params').textContent = initValueJson
-  document.getElementById('url').value = 'http://localhost:3000/getpdf'
+  document.getElementById('url').value = 'http://base64pdf.herokuapp.com/getpdf'
 }
