@@ -1,5 +1,5 @@
 <?php
-  // Process a JSON response containing a base64-encoded PDF field: 'pdf'
+  // Process a JSON request parameter containing a base64-encoded PDF key: 'pdf'
   if (isset($_POST['pdf'])) {
     $pdf = $_POST['pdf'];
 	  
