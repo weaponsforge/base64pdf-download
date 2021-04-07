@@ -1,9 +1,10 @@
 <?php
   // Fetch a JSON response containing a base64-encoded PDF field from 'url'
-  if (isset($_POST['url'])) {
-	$url = $_POST['url'];
+  if (isset($_POST['pdf'])) {
+    $pdf = $_POST['pdf'];
 	  
     // Send POST request to external 'url' server
+    /*
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_POST, 1);
@@ -13,6 +14,10 @@
     
     // Convert result to json
     $data = json_decode($result);
+    */
+
+    // Convert POST 'pdf' parameter to json
+    $data = json_decode($pdf);
 
     // Echo the fetched base64 string
     // echo $data->FileContents;
